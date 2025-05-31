@@ -1,0 +1,70 @@
+.Label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--Spacing-none) var(--Spacing-sm);
+    gap: var(--Spacing-2xs);
+    border: 1px solid var(--Neutral-100);
+    border-radius: var(--Radius-md);
+    cursor: pointer;
+}
+
+/* ===== THEME: SIZE ===== */
+.Medium {
+    width: 298px;
+    height: 54px;
+}
+
+.Medium_Subtext {
+    width: 132px;
+    height: 54px;
+}
+
+.Small {
+    width: 128px;
+    height: 32px;
+}
+
+/* ===== CHILD SPACING ===== */
+.Medium .children .mainLabel,
+.Medium_Subtext .children .mainLabel {
+    margin-left: var(--Spacing-2xs);
+}
+
+.Medium_Subtext .children .subLabel {
+    margin-left: var(--Spacing-2xs);
+    color: var(--Neutral-800);
+}
+
+/* ===== STATES: CHECKED / HOVER / ACTIVE ===== */
+.Label:has(input:checked) {
+    background: var(--Red-50);
+    border: 1px solid var(--Red-50);
+}
+
+.Label:has(input:checked:hover) {
+    background: var(--Red-50);
+}
+
+.Label:has(input:hover) {
+    background: var(--Blue-Gray-50);
+}
+
+.Label:has(input:active) {
+    background: var(--Blue-Gray-100);
+}
+
+/* ===== CHECKBOX WRAPPER ===== */
+.checkbox {
+    min-width: 14px;
+    min-height: 14px;
+    max-width: 14px;
+    max-height: 14px;
+}
+
+/* Kích thước checkbox và box hiển thị */
+.checkbox input,
+.checkbox input + span {
+    width: 14px;
+    height: 14px;
+}

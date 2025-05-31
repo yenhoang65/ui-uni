@@ -1,0 +1,108 @@
+.box {
+    padding: 20px;
+}
+
+.add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.buttonAdd {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px !important;
+    background-color: var(--secondary-blue);
+    color: #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonAdd:hover {
+    background-color: #2563eb;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thead {
+    background-color: #f3f4f6;
+}
+
+.thead th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #1f2937;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tableCell {
+    padding: 12px 16px;
+    color: #4b5563;
+    border-bottom: 1px solid var(--secondary-grey);
+}
+
+.action {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.viewButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.viewButton svg {
+    font-size: 18px;
+}
+
+.viewButton:hover {
+    background-color: #e5e7eb;
+}
+
+.viewButtonUpdate {
+    color: #3b82f6;
+}
+
+.viewButtonDelete {
+    color: #ef4444;
+}
+
+.paginationWrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .add {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .buttonAdd {
+        width: 100%;
+        justify-content: center;
+    }
+}

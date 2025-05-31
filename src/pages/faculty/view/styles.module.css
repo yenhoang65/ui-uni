@@ -1,0 +1,96 @@
+/* FacultyDetailPage.module.css */
+
+.facultyDetailContainer {
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.facultyHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.logoContainer {
+    margin-right: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.facultyHeader .titleInfo h1 {
+    font-size: 2.8em;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.facultyHeader .titleInfo p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.facultyOverview h2,
+.facultyDescription h2 {
+    font-size: 2em;
+    color: #34495e;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.facultyOverview .infoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.facultyOverview .infoGrid .infoItem {
+    padding: 15px 0;
+}
+
+.facultyOverview .infoGrid .infoItem strong,
+.infoItemAddress strong {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.infoItemAddress strong {
+    padding-top: 15px;
+}
+
+.facultyOverview .infoGrid .infoItem a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.facultyOverview .infoGrid .infoItem a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.description {
+    margin-top: 30px;
+}
+
+.desc {
+    line-height: 150%;
+}
+
+@media (max-width: 768px) {
+    .facultyHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logoContainer {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    .facultyOverview .infoGrid {
+        grid-template-columns: 1fr;
+    }
+}

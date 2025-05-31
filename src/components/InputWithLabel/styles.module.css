@@ -1,0 +1,30 @@
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.label {
+    font-size: 14px;
+    color: #111827; /* gần giống đen */
+    font-weight: 500;
+}
+
+.required {
+    color: red;
+}
+
+.input {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db; /* giống border ảnh */
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s ease;
+    background-color: white;
+}
+
+.input:focus {
+    border-color: var(--secondary-blue);
+}

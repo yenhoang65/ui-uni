@@ -1,0 +1,39 @@
+.captionText {
+    line-height: 150%;
+    font-weight: 300;
+}
+
+/* Theme: xs */
+.captionText[data-theme="xs"] {
+    font-size: 11px;
+}
+
+/* Theme: xs-bold */
+.captionText[data-theme="xs-bold"] {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Theme: 2xs */
+.captionText[data-theme="2xs"] {
+    font-size: 10px;
+}
+
+/* Theme: 2xs-bold */
+.captionText[data-theme="2xs-bold"] {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+/* Text alignment */
+.captionText[data-textalign="left"] {
+    text-align: left;
+}
+
+.captionText[data-textalign="center"] {
+    text-align: center;
+}
+
+.captionText[data-textalign="right"] {
+    text-align: right;
+}

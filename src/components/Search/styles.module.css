@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.select {
+    margin-top: 2px;
+    padding: 9px 16px;
+    border: 1px solid #d1d5db; /* slate-700 */
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.select:hover,
+.select:focus {
+    border-color: #6366f1;
+}
+
+.input {
+    padding: 8px 16px;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    outline: none;
+    background-color: transparent;
+    transition: border-color 0.2s;
+}
+
+.input:focus {
+    border-color: #6366f1;
+}

@@ -1,0 +1,79 @@
+.attendanceContainer {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+/* Table layout */
+.attendanceTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.attendanceTable thead {
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.attendanceTable th,
+.attendanceTable td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* Zebra row styling */
+.attendanceTable tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Compact select + input style */
+.attendanceSelect select,
+.noteInput {
+    height: 32px;
+    padding: 4px 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* Header with session selector */
+.attendanceHeader {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* Button wrapper */
+.attendanceActions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.selectPresent {
+    color: #389e0d;
+    border-color: #b7eb8f;
+}
+
+.selectAbsent {
+    color: #cf1322;
+    border-color: #ffa39e;
+}
+
+.selectExcused {
+    color: #d48806;
+    border-color: #ffe58f;
+}

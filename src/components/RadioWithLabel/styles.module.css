@@ -1,0 +1,31 @@
+.label {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.label:has(input[type="radio"]:focus-visible) {
+    border-color: var(--Primary-400);
+}
+
+.label:has(input[type="radio"]:disabled) .children {
+    opacity: 0.3;
+}
+
+.large {
+    padding: 3px;
+}
+
+.large .children {
+    font-size: 14px;
+}
+
+.children {
+    margin-left: 8px;
+    font-size: 14px;
+}

@@ -1,0 +1,67 @@
+/* Màu chữ cho body text và caption text */
+.bodyText:not(.bodyTextCaption) {
+    color: var(--old-neutral-500);
+}
+
+.bodyTextCaption {
+    color: var(--old-neutral-300);
+}
+
+/* Font size và line-height theo data-size */
+.bodyText[data-size="Caption-01"] {
+    font-size: 14px;
+}
+
+.bodyText[data-size="Caption-02"] {
+    font-size: 12px;
+}
+
+.bodyText[data-size="Caption-03"] {
+    font-size: 11px;
+}
+
+.bodyText[data-size="Caption-04"] {
+    font-size: 10px;
+}
+
+.bodyText[data-size="Caption-05"] {
+    font-size: 10px;
+    line-height: 1;
+}
+
+.bodyText[data-size="Body-01"] {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.bodyText[data-size="Body-02"] {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.bodyText[data-size="Body-03"] {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* Font weight theo theme */
+.bodyText[data-theme="Bold"] {
+    font-weight: 600;
+}
+
+.bodyText[data-theme="Regular"] {
+    font-weight: 300;
+}
+
+/* Căn chỉnh text */
+.bodyText[data-textAlign="left"] {
+    text-align: left;
+}
+
+.bodyText[data-textAlign="center"] {
+    text-align: center;
+}
+
+.bodyText[data-textAlign="right"] {
+    text-align: right;
+}
