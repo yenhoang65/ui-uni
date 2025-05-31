@@ -17,7 +17,7 @@ import {
     registerTC,
 } from "@/store/reducer/creditRegistrationReducer";
 import toast from "react-hot-toast";
-import { getCurrentSemesterAndSchoolYear } from "./constants";
+import { getCurrentSemesterAndSchoolYear } from "../../../constants/constants";
 
 moment.updateLocale("en", {
     week: {
