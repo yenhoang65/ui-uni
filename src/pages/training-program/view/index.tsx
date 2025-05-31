@@ -87,8 +87,8 @@ const ViewTrainingProgram = () => {
     };
 
     const programSubjectIds = new Set(
-        (subjectFollowTrainingProgram.subjects ?? []).map((s) =>
-            String(s.subjectId)
+        (subjectFollowTrainingProgram.subjects ?? []).map(
+            (s: { subjectId: string | number }) => String(s.subjectId)
         )
     );
 
