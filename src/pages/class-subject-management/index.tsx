@@ -13,7 +13,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { TypographyBody } from "@/components/TypographyBody";
 import { getClassSubjectFollowLecturer } from "@/store/reducer/classReducer";
-import { getCurrentSemesterAndSchoolYear } from "../credit-registration/[subject_id]/constants";
 import SelectWithLabel from "@/components/SelectWithLabel";
 
 const ClassSubjectManagement = () => {
