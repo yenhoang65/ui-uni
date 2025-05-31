@@ -14,7 +14,7 @@ import AuthGuard from "@/components/AuthGuard";
 import SelectWithLabel from "@/components/SelectWithLabel";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/store";
-import { getExamAll, setExamToEdit } from "@/store/reducer/examReducer";
+import { getExamAll } from "@/store/reducer/examReducer";
 import { TypographyBody } from "@/components/TypographyBody";
 import { all } from "axios";
 import { useRouter } from "next/router";
