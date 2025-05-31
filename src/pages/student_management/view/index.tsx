@@ -108,13 +108,9 @@ const StudentDetail = () => {
                                 {student.dateOfBirth.toISOString().slice(0, 10)}
                             </TypographyBody> */}
                             <TypographyBody tag="span">
-                                {student.dateOfBirth instanceof Date
-                                    ? student.dateOfBirth
-                                          .toISOString()
-                                          .slice(0, 10)
-                                    : new Date(student.dateOfBirth)
-                                          .toISOString()
-                                          .slice(0, 10)}{" "}
+                                {new Date(student.dateOfBirth)
+                                    .toISOString()
+                                    .slice(0, 10)}
                             </TypographyBody>
                         </div>
                     )}
@@ -170,13 +166,9 @@ const StudentDetail = () => {
                                 Ngày nhập học:
                             </TypographyBody>
                             <TypographyBody tag="span">
-                                {student.dateOfBirth instanceof Date
-                                    ? student.dateOfBirth
-                                          .toISOString()
-                                          .slice(0, 10) // if it's already a Date object
-                                    : new Date(student.dateOfBirth)
-                                          .toISOString()
-                                          .slice(0, 10)}{" "}
+                                {new Date(student.dateOfBirth)
+                                    .toISOString()
+                                    .slice(0, 10)}
                             </TypographyBody>
                         </div>
                     )}
