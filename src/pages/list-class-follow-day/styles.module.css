@@ -1,0 +1,98 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.noData {
+    display: flex;
+    justify-content: center;
+}
+
+.datePicker {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.buttonAdd {
+    padding: 0 10px !important;
+    cursor: pointer;
+}
+
+.buttonAdd:hover {
+    background-color: var(--secondary-blue-hover, #0056b3);
+}
+
+.tableWrapper {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 1rem;
+    background-color: white;
+    table-layout: fixed;
+}
+
+.thead {
+    background-color: #d5d5d5;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table th {
+    padding: 12px 20px;
+    font-weight: 600;
+    color: #495057;
+    white-space: nowrap;
+}
+
+.table td {
+    padding: 12px 20px;
+    color: #343a40;
+    vertical-align: middle;
+    border-bottom: 1px solid #e9ecef;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.paginationWrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.paginationWrapper > * {
+    margin-left: 8px;
+}

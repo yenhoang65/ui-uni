@@ -1,0 +1,13 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gridItem {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 16px 0;
+    border-radius: 8px;
+}

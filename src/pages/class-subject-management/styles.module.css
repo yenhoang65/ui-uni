@@ -1,0 +1,131 @@
+/* styles.module.css */
+
+.box {
+    padding: 20px;
+}
+
+.add {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filterRow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.selectFilter {
+    width: 150px !important;
+}
+
+.buttonAdd {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.buttonAdd:hover {
+    background-color: #1976d2;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    min-width: 600px; /* Đảm bảo có scroll ngang nếu nội dung quá dài */
+}
+
+.thead th {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #eee;
+}
+
+.table tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.totalStudent {
+    text-align: center;
+}
+
+.buttonAction {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.viewButton {
+    padding: 6px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--secondary-blue);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.viewButtonDelete {
+    color: var(--primary-red);
+}
+
+.viewButtonUpdate {
+    color: var(--primary-yellow);
+}
+.viewButton:hover {
+    transform: scale(1.05);
+}
+
+.attendanceButton {
+    background-color: #4caf50;
+}
+
+.gradingButton {
+    background-color: #ff9800;
+}
+
+.listButton {
+    background-color: #00bcd4;
+}
+
+.paginationWrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.assignment {
+    background-color: var(--primary-yellow);
+}

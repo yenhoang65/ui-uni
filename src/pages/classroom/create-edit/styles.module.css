@@ -1,0 +1,181 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.imageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 238px;
+    width: 100%;
+    cursor: pointer;
+    border: 1px dashed #d0d2d6;
+    transition: border 0.3s;
+    margin-top: 10px;
+}
+
+.imageWrapper:hover {
+    border-color: #ef4444; /* đỏ */
+}
+
+.previewImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.hiddenInput {
+    display: none;
+}
+
+.error {
+    color: #fca5a5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.submitButton {
+    margin-top: 16px;
+    background-color: #ef4444;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.submitButton:hover {
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+.address,
+.description,
+.logo {
+    margin-top: 25px;
+}
+
+.titleLogo,
+.label {
+    font-weight: 600 !important;
+}
+
+.inputDesc {
+    margin-top: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.buttonAction {
+    padding: 0 25px !important;
+    border-radius: 8px !important;
+    cursor: pointer;
+}
+
+.multiSelectContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.2rem;
+}
+
+.multiSelectInput {
+    border: 1px solid #ccc;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Căn trái nội dung */
+    gap: 0.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #555;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.selectedDevice {
+    background-color: #e7f3ff; /* Màu nền nhạt */
+    color: #1890ff; /* Màu chữ xanh */
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-right: 0.2rem; /* Giảm margin-right vì đã có gap */
+    margin-bottom: 0.2rem; /* Thêm margin-bottom để tạo khoảng cách giữa các hàng */
+    font-size: 0.9rem;
+    border: 1px solid #bae7ff; /* Viền nhạt */
+}
+
+.placeholder {
+    color: #999;
+    flex-grow: 1;
+}
+
+.arrow {
+    font-size: 1rem;
+    color: #999;
+    margin-left: auto; /* Đẩy mũi tên sang phải */
+}
+
+.multiSelectDropdown {
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    z-index: 10; /* Đảm bảo hiển thị trên các phần tử khác */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.2rem;
+    width: 100%; /* Chiều rộng bằng với container cha */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 1rem;
+    color: #333;
+    left: 0; /* Căn trái so với container cha */
+    top: calc(100% + 0.2rem); /* Hiển thị ngay bên dưới input */
+}
+
+.dropdownItem {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.dropdownItem:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdownItem.selected {
+    background-color: #e6f7ff;
+    color: #1890ff;
+    font-weight: normal;
+}
+
+.dropdownItem input[type="checkbox"] {
+    margin: 0;
+    width: 1rem;
+    height: 1rem;
+}

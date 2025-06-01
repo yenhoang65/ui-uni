@@ -1,0 +1,76 @@
+.detailGrid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.detailItem {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.detailItemFull {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.detailLabel {
+    font-weight: bold;
+    min-width: 150px;
+}
+
+.buttonGroup {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: 1 / -1;
+}
+
+.backButton {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: text-decoration 0.3s ease;
+}
+
+.backButton:hover {
+    text-decoration: underline;
+}
+
+.detailLabel {
+    font-weight: 600 !important;
+}
+
+.backIcon {
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+.editButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: var(--secondary-blue);
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+    color: #000;
+    background-color: #e0e0e0;
+}

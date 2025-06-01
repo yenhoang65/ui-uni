@@ -1,0 +1,59 @@
+.detailContainer {
+    padding: 20px;
+}
+
+.detailItem {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.detailLabel {
+    font-weight: bold;
+    min-width: 150px;
+}
+
+.buttonGroup {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.backButton {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: text-decoration 0.3s ease;
+}
+
+.backButton:hover {
+    text-decoration: underline;
+}
+
+.backIcon {
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+.editButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: var(--secondary-blue);
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+    color: #000;
+    background-color: #e0e0e0;
+}

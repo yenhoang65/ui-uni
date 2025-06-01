@@ -1,0 +1,103 @@
+.tableWrapper {
+    overflow-x: auto;
+    margin-top: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.add {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.facultyLogo {
+    object-fit: contain;
+}
+
+.buttonAdd {
+    text-decoration: none;
+    background-color: var(--secondary-blue);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 15px;
+    background-color: white;
+    table-layout: fixed;
+}
+
+.thead {
+    background-color: #e5e5e5;
+}
+
+.table th,
+.table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.table th {
+    padding: 14px 20px;
+    font-weight: 700;
+    color: #222;
+    background-color: #e5e5e5;
+    white-space: nowrap;
+}
+
+.table td {
+    padding: 14px 20px;
+    color: #333;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.viewButton {
+    padding: 6px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-blue);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.viewButtonDelete {
+    color: var(--primary-red);
+}
+
+.viewButtonUpdate {
+    color: var(--primary-yellow);
+}
+.viewButton:hover {
+    transform: scale(1.05);
+}
+
+.buttonAction {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.paginationWrapper {
+    display: flex;
+    justify-content: flex-end;
+}

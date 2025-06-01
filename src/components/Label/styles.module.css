@@ -1,0 +1,51 @@
+.module {
+    display: inline-block;
+    width: fit-content;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+/* === red50 === */
+.module[data-color="red50"] {
+    background: var(--Attention-RED-50);
+    color: var(--Attention-RED-400);
+    border: 1px solid var(--Attention-RED-50);
+}
+
+/* === red400 === */
+.module[data-color="red400"] {
+    background: var(--Attention-RED-400);
+    color: var(--Attention-RED-50);
+    border: 1px solid var(--Attention-RED-400);
+}
+
+/* === primary50 === */
+.module[data-color="primary50"] {
+    background: var(--old-neutral-white);
+    color: var(--Primary-400);
+    border: 1px solid var(--Primary-400);
+}
+
+/* === primary200 === */
+.module[data-color="primary200"] {
+    background: var(--Primary-200);
+    color: var(--Primary-400);
+    border: 1px solid var(--Primary-200);
+}
+
+/* === primary400 === */
+.module[data-color="primary400"] {
+    background: var(--Primary-400);
+    color: var(--Primary-50);
+    border: 1px solid var(--Primary-400);
+}
+
+/* === yellow50 === */
+.module[data-color="yellow50"] {
+    background: var(--Attention-Yellow-50);
+    color: var(--old-neutral-300);
+    border: 1px solid var(--old-neutral-300);
+}

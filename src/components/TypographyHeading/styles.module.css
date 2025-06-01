@@ -1,0 +1,38 @@
+.heading {
+    font-weight: 600;
+    line-height: 150%;
+}
+
+/* Kích thước theo theme */
+.heading[data-theme="4xl"] {
+    font-size: 30px;
+}
+
+.heading[data-theme="3xl"] {
+    font-size: 26px;
+}
+
+.heading[data-theme="2xl"] {
+    font-size: 22px;
+}
+
+.heading[data-theme="xl"] {
+    font-size: 18px;
+}
+
+.heading[data-theme="lg"] {
+    font-size: 16px;
+}
+
+/* Căn lề chữ theo data-textalign */
+.heading[data-textalign="left"] {
+    text-align: left;
+}
+
+.heading[data-textalign="center"] {
+    text-align: center;
+}
+
+.heading[data-textalign="right"] {
+    text-align: right;
+}

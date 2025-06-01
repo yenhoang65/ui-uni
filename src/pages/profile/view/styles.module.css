@@ -1,0 +1,66 @@
+.content {
+    background-color: #fff;
+    margin: 0 10px;
+    padding: 10px 0 20px 0;
+    border-radius: 8px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.userImageProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userImage {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.right,
+.basicInfo,
+.userImageProfile {
+    border-radius: 8px;
+    padding: 15px;
+    background-color: var(--primary-white);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.basicInfo,
+.informationContent > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.informationContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding-top: 10px;
+}
+
+.button {
+    cursor: pointer;
+    border-radius: 8px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
