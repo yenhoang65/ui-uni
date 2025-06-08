@@ -6,8 +6,7 @@
         "dev": "next dev --turbopack",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
-        "vercel-build": "next build"
+        "lint": "next lint"
     },
     "dependencies": {
         "@reduxjs/toolkit": "^2.7.0",
