@@ -1,0 +1,29 @@
+.textButton {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--Red-800);
+    display: flex;
+    width: 100%;
+    padding: var(--Spacing-lg) var(--Spacing-none) var(--Spacing-lg)
+        var(--Spacing-lg);
+    align-items: center;
+    border: 1px solid var(--Blue-Gray-100);
+    background: var(--Neutral-White);
+}
+
+@media (hover: hover) {
+    .textButton:hover {
+        background: var(--Blue-Gray-50);
+        color: var(--Red-700);
+    }
+}
+
+.textButton:active {
+    background: var(--Blue-Gray-100);
+}
+
+.textButton:focus-visible {
+    outline: 1px solid var(--Neutral-800);
+    background: var(--Neutral-White);
+}

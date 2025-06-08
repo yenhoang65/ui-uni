@@ -1,0 +1,85 @@
+/* Mặc định */
+.bodyText {
+    line-height: 150%;
+    font-weight: 300;
+}
+
+.bodyText[data-size="Caption-01"] {
+    font-size: 14px;
+}
+.bodyText[data-size="Caption-02"] {
+    font-size: 12px;
+}
+.bodyText[data-size="Caption-03"] {
+    font-size: 11px;
+}
+.bodyText[data-size="Caption-04"] {
+    font-size: 10px;
+}
+.bodyText[data-size="Caption-05"] {
+    font-size: 10px;
+    line-height: 1;
+}
+
+.bodyText[data-size="Body-01"] {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.bodyText[data-size="Body-02"] {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.bodyText[data-size="Body-03"] {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* Kiểu chữ theo data-theme */
+.bodyText[data-theme="Bold"] {
+    font-weight: 600;
+}
+.bodyText[data-theme="Regular"] {
+    font-weight: 300;
+}
+
+.bodyText[data-theme="lg"] {
+    font-size: 16px;
+}
+
+.bodyText[data-theme="md"] {
+    font-size: 14px;
+}
+
+.bodyText[data-theme="md-bold"] {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bodyText[data-theme="md-loose"] {
+    font-size: 14px;
+    line-height: 175%;
+}
+
+.bodyText[data-theme="sm"] {
+    font-size: 12px;
+}
+
+.bodyText[data-theme="sm-bold"] {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Căn lề text */
+.bodyText[data-textalign="left"] {
+    text-align: left;
+}
+
+.bodyText[data-textalign="center"] {
+    text-align: center;
+}
+
+.bodyText[data-textalign="right"] {
+    text-align: right;
+}

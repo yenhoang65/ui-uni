@@ -1,0 +1,165 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    transition: all 0.2s ease;
+}
+
+.overlayHidden {
+    visibility: hidden;
+}
+
+.position {
+    font-size: 11px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: pre-wrap;
+    word-break: break-word;
+    padding: 0 10px;
+}
+
+.overlayVisible {
+    visibility: visible;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--primary-white);
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebarOpen {
+    left: 0;
+}
+
+.navList {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.navList::-webkit-scrollbar {
+    display: none;
+}
+
+.navGroup {
+    margin-bottom: 20px;
+}
+
+.groupTitle {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.navIcon,
+.titleName {
+    color: var(--color-grey);
+    line-height: 1.5;
+}
+.navList ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.navItem:hover {
+    background-color: #e0e8f9;
+}
+
+.navItemActive {
+    background-color: #e8f0fe;
+    color: var(--secondary-blue);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.titleActive,
+.navIconActive {
+    color: var(--secondary-blue);
+}
+
+.userSection {
+    padding: 16px;
+    margin: 16px;
+    background-color: #e0e8f9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.avatarWrapper {
+    width: 70px;
+    height: 70px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatarIcon {
+    border-radius: 999px;
+}
+
+.usernameLabel {
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+
+.username {
+    line-height: 24px;
+    font-weight: 500;
+
+    max-width: 160px;
+}
+
+.logoutButton {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logoutButton svg {
+    font-size: 18px;
+    transform: rotate(180deg);
+}
+
+.logoutButton:hover {
+    background-color: #f0f0f0;
+}

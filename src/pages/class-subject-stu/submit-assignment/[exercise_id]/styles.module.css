@@ -1,0 +1,86 @@
+.gridContainer {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Trái - thông tin bài tập */
+.leftColumn {
+    flex: 1;
+    min-width: 320px;
+    max-width: 50%;
+}
+
+/* Phải - form nộp bài */
+.rightColumn {
+    flex: 1;
+    min-width: 320px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    height: fit-content;
+}
+
+.detailItem {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.desc {
+    display: flex;
+}
+
+.detailLabel {
+    font-weight: 600;
+    display: inline-block;
+    min-width: 130px;
+    color: #333;
+}
+
+.fileLink {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.inputBox {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.submitButton {
+    cursor: pointer;
+    margin-top: 12px;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+.buttonGroup {
+    margin-top: 24px;
+}
+
+.backButton {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: #007bff;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.backButton:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.backIcon {
+    font-size: 18px;
+}

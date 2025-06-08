@@ -1,0 +1,161 @@
+.container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.classInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.classInfo p {
+    margin: 6px 0;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    font-size: 15px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.table thead {
+    background-color: #f4f6f8;
+}
+
+.table th {
+    font-weight: 600;
+    color: #222;
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.table td {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.link {
+    color: #1e88e5;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: #1565c0;
+    text-decoration: underline;
+}
+
+.noSlide {
+    color: #888;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.viewButton {
+    padding: 6px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-blue);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.viewButtonDelete {
+    color: var(--primary-red);
+}
+
+.viewButtonUpdate {
+    color: var(--primary-yellow);
+}
+.viewButton:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.classInfo p {
+    margin: 6px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table th,
+.table td {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 15px;
+}
+
+.table th {
+    background-color: #f5f7fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.link {
+    color: #007bff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.noSlide {
+    color: #888;
+    font-style: italic;
+}
+
+.buttonAction {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Modal form layout */
+.modalForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 4px;
+}
+
+.modalForm input {
+    font-size: 14px;
+}
+
+.buttonSave {
+    padding: 0 10px !important;
+    cursor: pointer;
+}
+
+.buttonSave:hover {
+    background-color: var(--secondary-blue) !important;
+}

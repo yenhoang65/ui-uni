@@ -1,0 +1,65 @@
+.calendarWrapper :global(.rbc-toolbar .rbc-btn-group) {
+    display: none;
+}
+
+.calendarWrapper :global(.rbc-toolbar-label) {
+    display: none;
+}
+
+.calendarWrapper :global(.rbc-time-header .rbc-header) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calendarWrapper
+    :global(.rbc-time-header .rbc-header > span:not(:first-child)) {
+    display: none;
+}
+
+.calendarWrapper :global(.rbc-time-header .rbc-header) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calendarWrapper
+    :global(.rbc-time-header .rbc-header > span:not(:first-child)) {
+    display: none;
+}
+
+.calendarWrapper :global(.rbc-time-header-content .rbc-row:nth-child(2)) {
+    display: none !important;
+}
+
+.calendarWrapper :global(.rbc-allday-cell),
+.calendarWrapper :global(.rbc-allday-events),
+.calendarWrapper :global(.rbc-time-header-content .rbc-row:nth-child(2)) {
+    display: none !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.calendarWrapper :global(.rbc-time-header) {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.backButton {
+    text-decoration: none;
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+    color: #000;
+}
+
+.backButton:hover {
+    text-decoration: underline;
+}
+
+.rbc-event-content {
+    white-space: pre-wrap;
+}

@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.buttonAction {
+    cursor: pointer;
+    padding: 0 15px !important;
+}

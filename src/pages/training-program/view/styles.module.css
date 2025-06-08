@@ -1,0 +1,183 @@
+/* styles.module.css */
+
+.container {
+    padding: 20px;
+}
+
+.programInfo {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.programInfo p {
+    margin-bottom: 8px;
+}
+
+.programInfo strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.subjectsTitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 15px;
+    background-color: white;
+    table-layout: fixed;
+}
+
+.thead {
+    background-color: #e5e5e5;
+}
+
+.table th,
+.table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 12px 15px;
+}
+
+.table th {
+    font-weight: 700;
+    color: #222;
+}
+
+.table td {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.actionButton {
+    background-color: transparent !important;
+    color: var(--primary-red) !important;
+    border: none !important;
+    font-size: 20px !important;
+    padding: 10px !important;
+    cursor: pointer;
+}
+
+.noSubjects {
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* .headingSubject {
+    margin-top: 20px;
+} */
+
+.group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 16px;
+    word-break: break-word;
+}
+
+.groupTitle {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.buttonAddSubject {
+    border-bottom: 1px solid var(--secondary-blue);
+    padding: 3px 0px;
+    color: var(--secondary-blue);
+    cursor: pointer;
+}
+.buttonAdd {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    padding: 3px 8px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 10px;
+    background-color: var(--secondary-blue);
+}
+
+.modalActions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.modalActions button {
+    cursor: pointer;
+    padding: 0 10px !important;
+}
+
+.checkboxTableWrapper {
+    overflow-x: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.checkboxTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.titleModal {
+    display: flex;
+    margin-bottom: 5px !important;
+}
+
+.checkboxTable th,
+.checkboxTable td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.checkboxTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.checkboxTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.checkboxTable input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}

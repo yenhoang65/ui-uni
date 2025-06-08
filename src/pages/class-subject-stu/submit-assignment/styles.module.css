@@ -1,0 +1,86 @@
+.assignmentGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.assignmentItem {
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ddd;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.assignmentTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.submitted {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.late {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.backAction {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #222;
+    text-decoration: none;
+}
+
+.noData {
+    display: flex;
+    justify-content: center;
+}
+
+.notSubmitted {
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.action {
+    margin-top: 8px;
+}
+
+.submitBtn {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: var(--secondary-blue);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.submitBtn:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+.submitBtn:active {
+    transform: translateY(0);
+}
+
+.sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0;
+    color: #0052cc;
+}

@@ -1,0 +1,92 @@
+.button {
+    font-weight: 600;
+    line-height: 150%;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    padding: var(--Spacing-none) var(--Spacing-sm);
+}
+
+.button:disabled {
+    pointer-events: none;
+}
+
+/* === Size === */
+.middle {
+    font-size: 14px;
+    height: 40px;
+}
+
+.small {
+    font-size: 12px;
+    height: 30px;
+}
+
+.large {
+    font-size: 16px;
+    height: 50px;
+}
+
+.x-large {
+    font-size: 18px;
+    height: 60px;
+}
+
+/* === Theme === */
+.primary {
+    color: var(--primary-white);
+    background-color: var(--secondary-blue);
+    border-color: var(---secondary-blue);
+}
+
+.normal {
+    color: var(--primary-white);
+    background-color: var(--secondary-blue);
+    border-color: var(---secondary-blue);
+}
+
+.login {
+    color: var(--Neutral-White);
+    background-color: var(--Blue-900);
+    border-color: var(--Blue-900);
+}
+
+.alert {
+    color: var(--Red-800);
+    background-color: var(--Neutral-White);
+    border-color: var(--Red-800);
+}
+
+/* === Disabled === */
+.primary:disabled {
+    background-color: var(--Neutral-200);
+    border-color: var(--Neutral-200);
+}
+
+.normal:disabled {
+    color: var(--Neutral-White);
+    background-color: var(--Neutral-200);
+    border-color: var(--Neutral-200);
+}
+
+.login:disabled {
+    color: var(--Neutral-White);
+    background-color: var(--Neutral-200);
+    border-color: var(--Neutral-200);
+}
+
+.alert:disabled {
+    color: var(--Neutral-White);
+    background-color: var(--Neutral-200);
+    border-color: var(--Neutral-200);
+}
+
+/* === Hover === */
+@media (hover: hover) {
+    .primary:hover {
+        background-color: var(--Red-700);
+        border-color: var(--Red-700);
+    }
+
+    /* Thêm các hover khác nếu cần */
+}

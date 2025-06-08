@@ -1,0 +1,152 @@
+.tableWrapper {
+    overflow-x: auto;
+    margin-top: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 15px;
+    background-color: white;
+    table-layout: fixed;
+}
+
+.thead {
+    background-color: #e5e5e5;
+}
+
+.table th,
+.table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.table th {
+    padding: 14px 20px;
+    font-weight: 700;
+    color: #222;
+    background-color: #e5e5e5;
+    white-space: nowrap;
+}
+
+/* Thiết lập lại chiều rộng cho các cột phù hợp nội dung */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+    /* STT */
+    width: 48px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+    /* Môn học */
+    width: 220px;
+    min-width: 180px;
+    max-width: 260px;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+    /* Lớp */
+    width: 110px;
+    min-width: 90px;
+    max-width: 140px;
+}
+
+.table th:nth-child(4),
+.table td:nth-child(4) {
+    /* GV */
+    width: 160px;
+    min-width: 120px;
+    max-width: 180px;
+}
+
+.table th:nth-child(5),
+.table td:nth-child(5) {
+    /* Thời gian */
+    width: 290px;
+    min-width: 180px;
+    max-width: 350px;
+    white-space: pre-line;
+}
+
+.table th:nth-child(6),
+.table td:nth-child(6) {
+    /* Chi tiết */
+    width: 72px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.table td {
+    padding: 14px 20px;
+    color: #333;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.viewButton {
+    padding: 6px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-blue);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.viewButtonDelete {
+    color: var(--primary-red);
+}
+
+.viewButtonUpdate {
+    color: var(--primary-yellow);
+}
+.viewButton:hover {
+    transform: scale(1.05);
+}
+.buttonAction {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.paginationWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Các style khác giữ nguyên */
+.filterAndAdd {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchAndFilter {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.buttonAdd {
+    text-decoration: none;
+    background-color: var(--secondary-blue);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}

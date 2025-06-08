@@ -1,0 +1,153 @@
+/* assignment.module.css */
+
+.assignmentList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.assignmentGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 1rem;
+}
+
+.assignmentItem {
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.assignmentItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 19px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.infoRow {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.infoRow strong {
+    font-weight: bold;
+    color: #333;
+    width: 100px;
+    display: inline-block;
+}
+
+.fileLink {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.fileLink:hover {
+    text-decoration: underline;
+}
+
+.deadline {
+    color: #dc3545;
+}
+
+.createdDate {
+    color: #28a745;
+}
+
+.submissionsCount {
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.actions {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.actionButton {
+    width: 200px;
+}
+
+.actionButton:hover {
+    background-color: #0056b3;
+}
+
+.actionButton.secondary {
+    background-color: #6c757d;
+}
+
+.actionButton.secondary:hover {
+    background-color: #545b62;
+}
+
+.addAssignmentButton {
+    background-color: var(--secondary-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 1rem;
+    align-self: flex-end;
+}
+
+.addAssignmentButton:hover {
+    background-color: #218838;
+}
+
+.buttonUpdate,
+.buttonDetail,
+.addAssignmentButton,
+.viewSubmissions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    padding: 5 10px !important;
+    cursor: pointer !important;
+}
+
+.buttonUpdate,
+.buttonDetail,
+.viewSubmissions {
+    border-radius: 4px;
+}
+
+.buttonDetail {
+    background-color: transparent !important;
+    color: var(--secondary-blue) !important;
+}
+
+.buttonUpdate {
+    background-color: var(--primary-red) !important;
+    color: #fff;
+}
+
+.viewSubmissions {
+    background-color: var(--primary-blue) !important;
+    color: #fff;
+}

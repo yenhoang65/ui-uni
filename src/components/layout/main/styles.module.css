@@ -1,0 +1,18 @@
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 20px;
+    /* background-color: #d5d5d5; */
+}
+
+.content {
+    margin-left: 0;
+    padding-top: 75px;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+    .content {
+        margin-left: 260px;
+    }
+}

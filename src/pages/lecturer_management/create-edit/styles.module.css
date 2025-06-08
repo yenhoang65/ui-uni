@@ -1,0 +1,171 @@
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.imageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 238px;
+    width: 100%;
+    cursor: pointer;
+    border: 1px dashed #d0d2d6;
+    transition: border 0.3s;
+    margin-top: 10px;
+}
+
+.imageWrapper:hover {
+    border-color: #ef4444; /* đỏ */
+}
+
+.previewImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.downloadLink {
+    font-size: 14px;
+    color: #0070f3;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.hiddenInput {
+    display: none;
+}
+
+.error {
+    color: #fca5a5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.submitButton {
+    margin-top: 16px;
+    background-color: #ef4444;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.submitButton:hover {
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+.address,
+.description,
+.logo {
+    margin-top: 25px;
+}
+
+.titleLogo,
+.label {
+    font-weight: 600 !important;
+}
+
+.inputDesc {
+    margin-top: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.buttonAction {
+    padding: 0 25px !important;
+    border-radius: 8px !important;
+    cursor: pointer;
+}
+
+.headerActions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.importButton {
+    padding: 0 15px !important;
+    cursor: pointer;
+}
+
+.fileUpload {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fileInput {
+    display: inline-block; /* Hiển thị input */
+    width: auto; /* Điều chỉnh độ rộng theo nội dung */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    flex-grow: 1; /* Cho phép input mở rộng */
+}
+.fileLabel[for="fileInput"] {
+    /* Các style đã có */
+}
+
+.fileName {
+    cursor: pointer;
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+    flex-grow: 1; /* Cho phép tên file mở rộng */
+    white-space: nowrap; /* Ngăn xuống dòng */
+    overflow: hidden; /* Ẩn phần vượt quá */
+    text-overflow: ellipsis; /* Hiển thị dấu "..." khi bị ẩn */
+}
+
+.importActions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.buttonAction {
+    background-color: #dc3545; /* Màu đỏ cho nút Hủy */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.buttonAction:hover {
+    background-color: #c82333;
+}
+
+.template {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imageTemplate {
+    width: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,128 @@
+.container {
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.heading {
+    font-size: 1.28rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 7px;
+}
+.headingIcon {
+    margin-right: 3px;
+    font-size: 1.2em;
+}
+.headingHighlight {
+    color: #222;
+    font-weight: 500;
+}
+
+.filterRow {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 14px;
+    margin-top: 6px;
+}
+.selectFilter {
+    min-width: 220px;
+}
+
+.summaryRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 54px;
+    font-size: 1.14rem;
+    margin: 16px 0 8px 0;
+    line-height: 2.2;
+    font-weight: 500;
+    align-items: flex-end;
+}
+
+.valueRed {
+    color: var(--secondary-blue);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.label {
+    font-weight: 500;
+    color: #222;
+}
+
+.tableWrapper {
+    margin-top: 14px;
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #d7e7fa;
+}
+
+.resultTable {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 1200px;
+    font-size: 15.7px;
+}
+
+.resultTable th {
+    font-weight: 700;
+    padding: 10px 7px;
+    background-color: #e5e5e5;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+.resultTable td {
+    padding: 9px 7px;
+    border: 1px solid #d6e7f9;
+    text-align: left;
+    font-size: 15.7px;
+}
+
+.resultTable th.center,
+.resultTable td.center {
+    text-align: center;
+}
+
+.electiveCheck {
+    color: #2297c9;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .resultTable {
+        font-size: 14.7px;
+        min-width: 900px;
+    }
+    .container {
+        padding: 10px 2px 18px 2px;
+    }
+    .filterRow {
+        gap: 16px;
+    }
+    .selectFilter {
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 700px) {
+    .resultTable {
+        font-size: 13.8px;
+        min-width: 750px;
+    }
+    .heading {
+        font-size: 1.1rem;
+    }
+    .filterRow {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+}

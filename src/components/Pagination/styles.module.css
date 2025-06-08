@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pageButton {
+    width: 33px;
+    height: 33px;
+    border-radius: 999px;
+    background-color: var(--secondary-grey);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.pageButton:hover {
+    background-color: var(--secondary-grey);
+    color: white;
+}
+
+.active {
+    background-color: var(--secondary-blue);
+    color: white;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}

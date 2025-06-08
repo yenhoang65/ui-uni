@@ -1,0 +1,73 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.formItemFull {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.fileInput {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.inputDesc {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-height: 240px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonAction {
+    padding: 10px 24px;
+    background-color: #0052cc;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.buttonAction:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+.buttonAction:hover:not(:disabled) {
+    background-color: #003f9e;
+}

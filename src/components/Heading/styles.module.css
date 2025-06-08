@@ -1,0 +1,57 @@
+.heading {
+    color: var(--old-neutral-500);
+}
+
+/* === Theme === */
+.heading[data-theme="Bold"] {
+    font-weight: 600;
+}
+
+.heading[data-theme="Regular"] {
+    font-weight: 300;
+}
+
+/* === Size === */
+.heading[data-size="Heading-01"] {
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.heading[data-size="Heading-02"] {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.heading[data-size="Heading-03"],
+.heading[data-size="Body-01"] {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.heading[data-size="Heading-06"] {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.heading[data-size="Body-02"] {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.heading[data-size="Body-03"] {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* === Text Align === */
+.heading[data-textalign="left"] {
+    text-align: left;
+}
+
+.heading[data-textalign="center"] {
+    text-align: center;
+}
+
+.heading[data-textalign="right"] {
+    text-align: right;
+}

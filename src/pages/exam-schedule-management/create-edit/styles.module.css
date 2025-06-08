@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 32px;
+    margin-bottom: 18px;
+}
+
+.gridItem {
+    margin-bottom: 0;
+}
+
+.description {
+    grid-column: 1 / -1;
+    margin-bottom: 18px;
+}
+
+.label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.inputDesc {
+    min-height: 120px;
+}
+
+.button {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+.buttonAction {
+    min-width: 140px;
+    background: #1677ff;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.buttonAction:hover {
+    background: #0958d9;
+}

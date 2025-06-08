@@ -1,0 +1,154 @@
+.box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ececec;
+    padding: 16px;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.thead th {
+    background: #e5e5e5;
+    font-weight: 600;
+    padding: 12px 10px;
+    border-bottom: 2px solid #e0e0e0;
+    text-align: center;
+}
+
+.table td {
+    padding: 12px 10px;
+    /* border-bottom: 1px solid #ececec; */
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.table td div {
+    line-height: 22px;
+    text-align: left;
+}
+
+.buttonAction {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.viewButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf1fb;
+    color: #1976d2;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    text-decoration: none;
+}
+
+.viewButton:hover {
+    background: #1976d2;
+    color: #fff;
+}
+
+.viewButtonDelete {
+    background: #ffebee;
+    color: #d32f2f;
+}
+
+.viewButtonDelete:hover {
+    background: #d32f2f;
+    color: #fff;
+}
+
+.statusSuccess {
+    color: #2e7d32;
+    background: #e8f5e9;
+    border-radius: 6px;
+    padding: 3px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.statusCancel {
+    color: #c62828;
+    background: #ffebee;
+    border-radius: 6px;
+    padding: 3px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.statusPending {
+    color: #b26a00;
+    background: #fff8e1;
+    border-radius: 6px;
+    padding: 3px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.paginationWrapper {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive chỉnh sửa lại cho bảng mượt mà hơn */
+@media (max-width: 900px) {
+    .table th,
+    .table td {
+        font-size: 14px;
+        padding: 10px 6px;
+    }
+
+    .viewButton {
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        padding: 12px;
+    }
+
+    .add {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .paginationWrapper {
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,41 @@
+.link {
+    color: var(--Blue-700);
+    outline: 1px solid transparent;
+    text-decoration: none;
+}
+
+.link:link,
+.link:visited {
+    text-decoration: none;
+}
+
+@media (hover: hover) {
+    .link:hover {
+        color: var(--Blue-400);
+        text-decoration: underline;
+    }
+
+    [data-theme="xs"] .link:hover,
+    [data-theme="2xs"] .link:hover {
+        text-decoration: none;
+    }
+}
+
+.link:active {
+    color: var(--Blue-900);
+    text-decoration: none;
+}
+
+.link:focus-visible {
+    outline: 1px solid var(--Neutral-800);
+    border-radius: var(--Radius-sm);
+    color: var(--Blue-700);
+}
+
+.link:visited {
+    color: var(--Blue-400);
+}
+
+.link.disabled {
+    pointer-events: none;
+}

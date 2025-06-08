@@ -1,0 +1,98 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Override global font styles for the calendar */
+.rbc-calendar,
+.rbc-toolbar *,
+.rbc-header *,
+.rbc-time-view *,
+.rbc-agenda-view *,
+.rbc-month-view *,
+.rbc-day-view *,
+.rbc-week-view *,
+.rbc-event * {
+    font-family: "Montserrat", sans-serif;
+}
+
+.rbc-calendar {
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.rbc-toolbar-label {
+    font-weight: 600;
+}
+
+.rbc-header {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    text-align: center;
+}
+
+.rbc-time-gutter {
+    background-color: #f1f3f5;
+    color: #495057;
+    width: 81px !important;
+    font-size: 13px;
+    font-weight: 600;
+    border-right: 1px solid #e9ecef;
+}
+
+.rbc-time-slot {
+    border-top: 1px solid #f1f3f5;
+}
+
+.rbc-event {
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    white-space: normal;
+    word-break: break-word;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease-in-out;
+}
+
+.rbc-event:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    filter: brightness(1.05);
+}
+
+.rbc-day-slot.rbc-today {
+    background-color: #eaf3ff;
+}
+
+.rbc-time-content {
+    scrollbar-width: thin;
+    scrollbar-color: #ced4da transparent;
+}
+
+.rbc-time-content::-webkit-scrollbar {
+    width: 6px;
+}
+.rbc-time-content::-webkit-scrollbar-thumb {
+    background-color: #ced4da;
+    border-radius: 4px;
+}

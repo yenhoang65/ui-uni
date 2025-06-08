@@ -1,0 +1,38 @@
+.container {
+    background-color: #fff;
+    padding: 10px 0 20px 0;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gridItem {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 16px 0;
+    border-radius: 8px;
+}
+
+.actionContent {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title {
+    margin-top: 20px;
+    border-bottom: none !important;
+    color: var(--secondary-blue) !important;
+}
+
+.button {
+    border-radius: 8px !important;
+    width: 200px;
+    cursor: pointer;
+}
